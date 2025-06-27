@@ -20,8 +20,8 @@ const IncentiveReviewQuote = () => {
         data-testid='incentive-review-btn'
       >
         <u>
-          See why <span className='font-extrabold'>83%</span> of our athletes
-          upgrade to <span className='font-extrabold'>Annual</span> ...
+          Why <span className='font-extrabold'>83%</span> of our athletes go for{' '}
+          <span className='font-extrabold'>Annual</span>...
         </u>
       </Button>
     </div>
