@@ -2,6 +2,8 @@
 
 First, run the development server:
 
+[Prod url](https://growth-generic-product.vercel.app/)
+
 [A video of me speaking through the task if you're not bothered to read 😂 - please 2x it!](https://www.veed.io/view/eaa013b5-b059-4db6-899c-5c588ccf5e37)
 
 ```bash
