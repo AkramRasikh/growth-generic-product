@@ -141,6 +141,7 @@ export const DataProvider = ({ data, children }: DataProviderProps) => {
       ...prev,
       `${userEventPrefix} ${flagState}`,
     ]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {

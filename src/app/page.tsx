@@ -8,8 +8,6 @@ import SocialProof from './components/SocialProof';
 import ScrollToCheckoutBtn from './components/ScrollToCheckoutBtn';
 import PageContainer from '@/components/base/PageContainer';
 
-export const fallBackErrorMsg = 'Error getting data';
-
 export default function Home() {
   const [data, setData] = useState<DataPayload | null>(null);
   const [isLoading, setIsLoading] = useState(false);
@@ -25,7 +23,7 @@ export default function Home() {
       } catch (error) {
         const errorMessage = (error as Error).message;
         if (errorMessage) {
-          setErrorMessageState(errorMessage || fallBackErrorMsg);
+          setErrorMessageState(errorMessage || 'Error getting data');
         }
       } finally {
         setIsLoading(false);

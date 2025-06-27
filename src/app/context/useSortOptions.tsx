@@ -28,6 +28,7 @@ const useSortOptions = ({
   useEffect(() => {
     const sortedItems = isSegmented ? sortBySegmented() : options;
     setOptionsState(sortedItems);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [flagState, isSegmented]);
 };
 

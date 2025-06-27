@@ -16,15 +16,21 @@ const useObserveElVisibility = ({
     }
   };
   useEffect(() => {
+    const element = ref.current; //
+
+    if (!element) return;
+
     const observer = new IntersectionObserver(
       ([entry]) => setIsVisible(entry.isIntersecting),
       { threshold: 0.6 },
     );
 
-    if (ref.current) observer.observe(ref.current);
+    observer.observe(element);
+
     return () => {
-      if (ref.current) observer.unobserve(ref.current);
+      observer.unobserve(element);
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return { scrollToOrder };

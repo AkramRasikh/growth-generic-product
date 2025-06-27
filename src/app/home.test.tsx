@@ -1,5 +1,5 @@
 import { fireEvent, render, screen, waitFor } from '@testing-library/react';
-import Home, { fallBackErrorMsg } from './page'; // adjust to actual path
+import Home from './page';
 import '@testing-library/jest-dom';
 import { responseData } from './api/on-load/response-data';
 import { benefitsArr, flagOptions } from './context/DataProvider';
@@ -17,6 +17,7 @@ const mockData = {
   ...responseData,
 };
 
+const fallBackErrorMsg = 'Error getting data';
 const errorMsg = 'Error loading, please try again';
 
 const commonSimilarities = () => {
