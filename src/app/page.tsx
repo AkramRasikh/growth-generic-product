@@ -8,7 +8,7 @@ import SocialProof from './components/SocialProof';
 import ScrollToCheckoutBtn from './components/ScrollToCheckoutBtn';
 import PageContainer from '@/components/base/PageContainer';
 
-export default function Home() {
+export default function Page() {
   const [data, setData] = useState<DataPayload | null>(null);
   const [isLoading, setIsLoading] = useState(false);
   const [errorMessageState, setErrorMessageState] = useState<string>('');
